@@ -1,4 +1,4 @@
-# SQL Agent with Gemini LLM  ![Build Status](https://img.shields.io/badge/build-passing-brightgreen) ![Version](https://img.shields.io/badge/version-1.0.0-blue) ![License](https://img.shields.io/badge/license-MIT-yellowgreen)
+# SQL Agent with Gemini LLM ![Build Status](https://img.shields.io/badge/build-passing-brightgreen) ![Version](https://img.shields.io/badge/version-1.0.0-blue) ![License](https://img.shields.io/badge/license-MIT-yellowgreen)
 
 ## Project Description
 SQL Agent with Gemini LLM is an intelligent SQL agent that leverages Google Gemini LLM to convert natural language queries into SQL statements, execute them against various databases, and return the results in a user-friendly format. This project includes features such as query validation, connection pooling, and support for multiple database backends, making it a versatile tool for developers and data analysts.
@@ -6,8 +6,8 @@ SQL Agent with Gemini LLM is an intelligent SQL agent that leverages Google Gemi
 ## Features
 - 🗣️ Natural language processing to generate SQL queries using Google Gemini LLM
 - ⚙️ Execution of generated SQL queries against multiple database backends (PostgreSQL, MySQL, SQLite)
-- 📊 Formatted results returned in JSON or HTML format
-- ✅ Query validation to ensure SQL syntax correctness before execution
+- 📊 Formatted results returned in JSON or HTML for easy consumption
+- ✅ Query validation to ensure generated SQL is syntactically correct and safe
 - 🔗 Connection pooling for efficient database connections
 - 🔒 User authentication and role-based access control
 - 🌐 Interactive web interface for users to input natural language queries
@@ -25,10 +25,7 @@ SQL Agent with Gemini LLM is an intelligent SQL agent that leverages Google Gemi
 - 🗄️ **PostgreSQL** (Database)
 - 🗄️ **MySQL** (Database)
 - 🗄️ **SQLite** (Database)
-- 🗄️ **SQLAlchemy** (ORM)
-
-### Caching
-- 🧊 **Redis** (In-memory Data Structure Store)
+- 🗄️ **Redis** (Caching)
 
 ## Installation
 To set up the project locally, follow these steps:
@@ -36,7 +33,7 @@ To set up the project locally, follow these steps:
 - Clone the repository
 bash
 git clone https://github.com/jaypanchal18/sql-agent-with-gemini-llm.git
-- Navigate into the project directory
+- Navigate to the project directory
 bash
 cd sql-agent-with-gemini-llm
 - Create a virtual environment
@@ -68,18 +65,14 @@ To run the tests, execute the following command:
 bash
 pytest
 ## Deployment
-For deploying the application, follow these steps:
-
-- Ensure your production environment has the necessary dependencies installed.
-- Configure your web server (e.g., Gunicorn, Nginx) to serve the Flask application.
-- Set environment variables for database connections and other configurations.
+For deploying the application, consider using a cloud service provider like AWS, Heroku, or DigitalOcean. Ensure that your environment variables are set correctly for production.
 
 ## Contributing
 We welcome contributions! Please follow these steps:
-
 - Fork the repository
 - Create a new branch (`git checkout -b feature/YourFeature`)
-- Make your changes and commit them (`git commit -m 'Add some feature'`)
+- Make your changes
+- Commit your changes (`git commit -m 'Add some feature'`)
 - Push to the branch (`git push origin feature/YourFeature`)
 - Open a pull request
 
